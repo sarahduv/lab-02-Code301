@@ -1,2 +1,20 @@
 # lab-02-Code301
 Jquery Lab with photo gallery
+
+Number and name of feature: Feature 1: Display Images
+Estimate of time needed to complete: 90 minutes
+Start time: 9:30am
+Finish time: 10:10am
+Actual time needed to complete: 40 minutes
+
+Number and name of feature: Feature 2: Filter Images
+Estimate of time needed to complete: 1 hour
+Start time: _____
+Finish time: _____
+Actual time needed to complete: _____
+
+Number and name of feature: Feature 3: Style the Application
+Estimate of time needed to complete: 45 minutes
+Start time: _____
+Finish time: _____
+Actual time needed to complete: _____
