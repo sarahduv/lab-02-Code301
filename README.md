@@ -4,8 +4,8 @@ Jquery Lab with photo gallery
 Number and name of feature: Feature 1: Display Images
 Estimate of time needed to complete: 90 minutes
 Start time: 9:30am
-Finish time: _____
-Actual time needed to complete: _____
+Finish time: 10:10am
+Actual time needed to complete: 40 minutes
 
 Number and name of feature: Feature 2: Filter Images
 Estimate of time needed to complete: 1 hour

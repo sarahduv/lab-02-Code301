@@ -11,7 +11,21 @@ const Animal = function (description, horns, image_url, keyword, title) {
   allAnimals.push(this);
 };
 
+Animal.prototype.renderWithJquery = function(){
+  const $myTemplate = $('#animal-template');
+  const myTemplateHtml = $myTemplate.html();
 
+  const $newSection = $('<section></section>')
+  $newSection.html(myTemplateHtml);
+
+  $newSection.find('img').attr('src', this.image_url);
+  $newSection.find('#pic-title').text(this.title);
+  $newSection.find('#descriptor').text(this.description);
+  $newSection.find('#keyword').text(this.keyword);
+  $newSection.find('#horns').text(this.horns);
+  
+  $('main').append($newSection);
+}
 
 
 // Ajax
