@@ -1,6 +1,11 @@
 # lab-02-Code301
 Jquery Lab with photo gallery
 
+Who built this?
+What does it do?
+How do I run it?
+
+
 Number and name of feature: Feature 1: Display Images
 Estimate of time needed to complete: 90 minutes
 Start time: 9:30am
