@@ -75,7 +75,10 @@ const renderAllAnimals = (arr) => {
     currentAnimals = arr;
   }
 
-  const sortBy = sortDropdown[0].options[sortDropdown[0].selectedIndex].value;
+  const sortSelector = sortDropdown[0];
+  const selectedSortIndex = sortSelector.selectedIndex;
+  const selectedSortOption = sortSelector.options[selectedSortIndex];
+  const sortBy = selectedSortOption.value;
   if (sortBy === "title") {
     arr.sort((a,b) => a.title > b.title ? 1 : -1);
   } else if (sortBy === "horns") {
@@ -89,13 +92,13 @@ const renderAllAnimals = (arr) => {
 
 $(function(){
   dropdown.on('change', function(){   
-    console.log('you clicked ' + this.value)
+    console.log('you clicked ' + this.value);
     let clicked = this.value;
-    console.log('let clicked is', clicked) 
+    console.log('let clicked is', clicked);
     $('section').hide();
 
     console.log('parent is', $(`p:contains(${clicked})`).parent());
-    $(`p:contains(${clicked})`).parent().show();
+    $(`p:contains(${clicked})`).parent().first().show();
   })
 
   sortDropdown.on('change', function(){   
@@ -118,6 +121,7 @@ const startLoadingPage2 = () => {
   });
 }
 
+
 getAllAnimalsFromFile(startLoadingPage2);
 
 $(function(){
@@ -134,6 +138,8 @@ $(function(){
     }
   })
 })
+
+
 
 
 /* ============================
